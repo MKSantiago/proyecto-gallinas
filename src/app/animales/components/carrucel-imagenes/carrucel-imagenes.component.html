@@ -1,0 +1,10 @@
+
+  <p-card [style]="{'display':'flex','justify-content':'center'}" class="p">
+    <p-galleria [value]="images" [showIndicators]="true" [showThumbnails]="false" [changeItemOnIndicatorHover]="true"
+      [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '640px'}">
+      <ng-template pTemplate="item" let-item>
+        <img [src]="item.itemImageSrc" style="width: 100%; display: block; border-radius: 10px;" />
+      </ng-template>
+    </p-galleria>
+  </p-card>
+
