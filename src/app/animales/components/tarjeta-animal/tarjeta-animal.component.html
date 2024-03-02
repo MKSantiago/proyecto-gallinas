@@ -1,5 +1,5 @@
-<div class="grid">
-  <div *ngFor="let animal of gallinasBD" class="col-3">
+<div class="grid justify-content-center align-items-center">
+  <div *ngFor="let animal of gallinasBD" class="col-12 md:col-6 lg:col-4 xl:col-3 w-min ">
     <p-card header={{animal.tipo}} subheader={{animal.color}} [style]="{ width: '360px' }">
       <ng-template pTemplate="header">
         <img alt="Card" src={{animal.src}} />
